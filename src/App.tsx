@@ -167,7 +167,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-navy-950 relative overflow-hidden">
+    <div className="min-h-screen bg-navy-950 relative overflow-x-clip">
       {/* Background */}
       <div className="absolute inset-0 grid-pattern opacity-30" />
       <div
@@ -226,7 +226,7 @@ export default function App() {
         </div>
 
         {/* Three-column workspace */}
-        <div className="mt-5 grid grid-cols-1 lg:grid-cols-12 gap-5 h-[calc(100vh-340px)] min-h-[500px]">
+        <div className="mt-5 grid grid-cols-1 lg:grid-cols-12 gap-5 min-h-[500px]">
           {/* Conversation — widest */}
           <div className="lg:col-span-5 animate-fade-up">
             <ConversationPanel
